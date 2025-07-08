@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <title>Portfólio</title>
+    </head>
+
+    <body>
+        <!-- Header da página -->
+        <header>
+            <h1 class="titulo">PORTFÓLIO - Vítor Martini</h1>
+        </header>
+
+        <!-- Barra de navegação -->
+        <nav>
+            <a class="link_nav" href="index.html"><span class="material-symbols-outlined">home</span>Home</a>
+            <a class="link_nav" href="sobre.html"><span class="material-symbols-outlined">account_circle</span>Sobre</a>
+            <a class="link_nav" href="formacao.html"><span class="material-symbols-outlined">book_2</span>Formação e Idiomas</a>
+            <a class="link_nav" href="projetos.html"><span class="material-symbols-outlined">folder</span>Projetos</a>
+            <a class="link_nav" href="contato.html"><span class="material-symbols-outlined">mail</span>Contato</a>
+        </nav>
+
+        <!-- Conteúdo da página, local onde será apresentado o conteúdo principal da página -->
+        <div id="container" class="container">
+            <h2>Contato</h2>
+            <form id="formulario">
+                <input id="nome" placeholder="Nome" />
+                <input id="email" placeholder="E-mail" />
+                <input id="telefone" type="" placeholder="Telefone" />
+                <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+            </form>
+            <div class="div_botao">
+                <button disabled id="enviar" onclick="verificaEnvio()">Enviar</button>
+            </div>
+        </div>
+
+        <!-- Script JS -->
+        <script src="main.js"></script>
+    </body>
+</html>
